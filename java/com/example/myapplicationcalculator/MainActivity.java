@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize UI elements
         inputFirstNumber = findViewById(R.id.inputFirstNumber);
         inputSecondNumber = findViewById(R.id.inputSecondNumber);
         buttonPlus = findViewById(R.id.buttonPlus);
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         buttonDivide = findViewById(R.id.buttonDivide);
         textResult = findViewById(R.id.textResult);
 
-        // Set onClickListeners for buttons
         buttonPlus.setOnClickListener(view -> calculate('+'));
         buttonMinus.setOnClickListener(view -> calculate('-'));
         buttonMultiply.setOnClickListener(view -> calculate('*'));
